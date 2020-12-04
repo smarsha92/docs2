@@ -1,0 +1,137 @@
+/* Header */
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  border: 5px solid greenyellow;
+}
+
+/* Nav */
+.navbar {
+  overflow: hidden;
+  background: #fc0505;
+}
+
+.navbar a {
+  float: inline-start;
+  color: #19e92aa6;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: solid;
+  font-size: 15px;
+  border-radius: 2px 2px 2px 0;
+}
+
+/* Hover */
+.navbar a:hover {
+  background-color: white;
+  transition: 3s ease;
+}
+
+/* End */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background: #110000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 3s ease;
+}
+.preloader h3 {
+  top: 55%;
+  position: absolute;
+}
+
+.loading {
+  height: 75px;
+}
+
+.preloader-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* End */
+.hero-overlay {
+  display: flex;
+  max-height: 780px;
+  padding-bottom: 500px;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(235, 14, 14, 0.6), rgba(189, 47, 47, 0.6));
+  color: #dfdb04;
+  overflow: hidden;
+  border: 10px solid black;
+}
+
+.centered-container {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  flex-shrink: 3;
+  flex-basis: 0%;
+  text-align: center;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.s-button {
+  display: inline-block;
+  border: 7px solid coral;
+  padding: 9px 15px;
+  background-color: #3898EC;
+  color: white;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px 2px 5px 2px;
+  overflow: hidden;
+  padding: 2px;
+}
+
+.centered-container a {
+  text-decoration: none;
+  background: black;
+  color: white;
+  box-shadow: 2px 2px 2px 0;
+}
+
+.container h1 {
+  background: black;
+}
+
+/* IDs */
+/*=========================*/
+main-content {
+  background-color: #8fcc2c;
+}
+
+/* end */
+.container {
+  border: 2px red solid;
+}
+
+.avatar img {
+  position: sticky;
+  right: 80%;
+  right: auto;
+  top: auto;
+  bottom: 0%;
+  height: 100px;
+  width: 100px;
+}

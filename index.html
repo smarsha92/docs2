@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <!-- End-->
+    <!--End-->
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <!-- Favi -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/docs/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/docs/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/docs/Favicon/site.webmanifest">
+    <!-- End-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js" integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA==" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Preloader-->
+    <div class="preloader">
+        <img class="loading" src="https://s.svgbox.net/loaders.svg?ic=oval" alt="loading">
+        <div class="rolling"></div>
+        <h3>Loading</h3>
+    </div>
+    <!--End-->
+    <div class="c1">
+        <header>
+            <img class="activator" id="activator" src="//s.svgbox.net/hero-outline.svg?fill=fff#menu-alt-1" alt="">
+            <nav>
+                <ul class="nav-links">
+                    <li>
+                        <a href="http://twitter.com">One</a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com">Two</a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com">Three</a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com">Four</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!--Landing page-->
+    <div class="head2">
+        <h1>Hello</h1>
+        <span><em>World</em> !</span>
+        <h4>circa 2020</h4>
+    </div>
+    <main class="px-16 py-6">
+        <div><a href="#">Four</a></div>
+        <div><a href="#">Five</a></div>
+
+
+        <div>
+            <h4 class="font-bold uppercase mt-12">More</h4>
+
+            <div class="mt-8">
+                <!-- Cards-->
+                <div>
+                    <img src="sora.png" alt="">
+                    <div>
+                        <span>Yo yoyoyoyoyoy</span>
+                        <span>Saofjdjjdf</span>
+                    </div>
+                </div>
+                <h4 class="mt-12 pb-2">Even More</h4>
+
+                <div>
+                    <!--More card  s-->
+                </div>
+
+                <div class="container mx-auto">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi modi obcaecati id consectetur ratione iste, magni consequuntur tenetur nemo error ipsum velit excepturi quas a distinctio, nam facilis non quos?</p>
+                    <div>load more</div>
+                </div>
+            </div>
+    </main>
+    <div class="box"></div>
+    <script>
+        var card = document.getElementById('activator');
+        var tl = gsap.timeline({
+            defaults: {
+                ease: "power2.inOut"
+            }
+        })
+
+        var toggle = false;
+
+        tl.to('.activator', {
+            background: 'transparent',
+            'borderRadius': '5em 0 0 5em'
+        });
+        tl.to('nav', {
+            'clipPath': 'ellipse(100% 100% at 50% 50%)'
+        }, "-=.5")
+        tl.to('nav img', {
+            opacity: 1,
+            transform: 'translateX(0)',
+            stagger: .05
+        }, "-=.5")
+        tl.pause();
+
+        card.addEventListener('click', () => {
+            toggle = !toggle;
+            if (toggle ? tl.play() : tl.reverse());
+        })
+    </script>
+
+
+    <script src="./app..js "></script>
+    <!--End-->
+</body>
+
+</html>
